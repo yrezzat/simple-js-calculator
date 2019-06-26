@@ -1,0 +1,64 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: black;
+}
+
+.output {
+    height: calc(100vh / 6);
+    font-family: "Segoe UI", serif;
+    font-size: 52px;
+    color: #fff;
+    text-align: right;
+    padding: 15px;
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: calc(5 * (100vh / 6));
+}
+
+button:nth-of-type(1) {
+    flex: 50%;
+}
+
+button {
+    border: black 2px solid;
+    flex: 25%;
+    font-family: "Segoe UI", serif;
+    font-size: 32px;
+}
+
+button:nth-last-of-type(2) {
+    flex: 75%;
+}
+
+.number {
+    background-color: #cccccc;
+}
+
+.number:hover {
+    background-color: #ffffff;
+}
+
+.operation {
+    background-color: #ffb680;
+    font-weight: bold;
+}
+
+.operation:hover {
+    background-color: #ffca68;
+}
